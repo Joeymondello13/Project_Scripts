@@ -15,7 +15,7 @@ pdbl.retrieve_pdb_file(accession_code, obsolete=False, pdir=pdir, file_format=fi
 with open("C:\\Users\Mondello\\PDB_files\\pdb6xm4.ent", "r") as file:
     pdb_file=file.read()
 file.close()    
-#Finds all lines that does NOT have HETATM (non-protein atoms)
+#Finds all lines that do NOT have HETATM (non-protein atoms)
 x=re.findall('^(?!^HETATM).*',pdb_file,flags=re.MULTILINE)
 #Writes all lines except non-protein lines from PDB file
 with open("C:\\Users\Mondello\\PDB_files\\pdb6xm4_clean.pdb", "w") as file2:
