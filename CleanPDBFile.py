@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[98]:
-
-
 import Bio
 import re
 from Bio.PDB import PDBList
@@ -30,16 +24,3 @@ with open("C:\\Users\Mondello\\PDB_files\\pdb6xm4_clean.pdb", "w") as file2:
             file2.write(i)
             file2.write("\n")
 file2.close()            
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
