@@ -7,7 +7,6 @@ pdbl = PDBList()
 accession_code='6XM4'
 #Name of folder to download PDB file
 pdir = 'PDB_files'
-
 file_format="pdb"
 #This function downloads the PDB file from the databank
 pdbl.retrieve_pdb_file(accession_code, obsolete=False, pdir=pdir, file_format=file_format, overwrite=False)
